@@ -1,7 +1,7 @@
 ## Walmart-Theater-Seating-Assignment
 
 ### Assumptions:
-#### 1. Customers can enter the seat from both the left and right sides to avoid crossing other groups as necessary.
+ 1. Customers can enter the seat from both the left and right sides to avoid crossing other groups as necessary.
 #### 2. Customers prefer seats that are higher up and farther away from the screen.
 #### 3. Customers will not want to be separated from their group and will always be in the same row as their group.
 #### 4. Rows that are occupied will be separated from other occupied rows by one row at all times. Ex: If row 4 is occupied, rows 3 and 5 will be empty.
