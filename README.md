@@ -10,13 +10,13 @@
  1. Parse through the request file and store in a dictionary / hashmap for access when processing requests.
  2. For each request, find the appropriate seating based on the current arrangement and append the seating to the output file.
   
-  a. Starting from the farthest / highest row of seats, check if the row can accomodate the requested seats and a three seat buffer. If not, jump two rows down and repeat as necessary.
+   a. Starting from the farthest / highest row of seats, check if the row can accomodate the requested seats and a three seat buffer. If not, jump two rows down and repeat as necessary.
   
-  b. If the row is empty, allocate the seats to fulfill starting from the left.
+   b. If the row is empty, allocate the seats to fulfill starting from the left.
   
-  c. Else, traverse the row until there are three seats past the last occupied seat.
+   c. Else, traverse the row until there are three seats past the last occupied seat.
   
-  d. Allocate these seats to the request starting from the seat right of the 3 seat buffer.
+   d. Allocate these seats to the request starting from the seat right of the 3 seat buffer.
  3. Print / return the complete path for the output file.
 
 ### Instructions:
