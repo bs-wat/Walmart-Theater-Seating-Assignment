@@ -7,7 +7,7 @@
 #### 4. Rows that are occupied will be separated from other occupied rows by one row at all times. Ex: If row 4 is occupied, rows 3 and 5 will be empty.
 
 ### Algorithm:
-#### 1. Parse through the request file and store them in a dictionary / hashmap for access when processing requests.
+#### 1. Parse through the request file and store in a dictionary / hashmap for access when processing requests.
 #### 2. For each request, find the appropriate seating based on the current arrangement and append the seating to the output file.
 #####  a. Starting from the farthest / highest row of seats, check if the row can accomodate the requested seats and a three seat buffer. If not, jump two rows down and repeat as necessary.
 #####  b. If the row is empty, allocate the seats to fulfill starting from the left.
