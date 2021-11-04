@@ -1,7 +1,8 @@
-# Walmart Summer 2022 Internship - Coding Assessment
+# Walmart Summer 2022 Internship - Movie Theater Seating Assignment
 # Candidate: Brandon Wat
 
 import sys
+import os
 
 def parse_requests(request_file, hashmap):
 
@@ -60,7 +61,7 @@ def find_seats(num_seats, curr_seating, row_map):
     # return the seats chosen
     return [ ( row_map[chosen_row] + str(x + 1) ) for x in chosen_seats ]
 
-def driver(request_file):
+def driver(request_file, output_name):
     # 0 = open seat , 1 = occupied, -1 = buffer
     theater = [ [0 for _ in range(20)] for _ in range(10) ]
 
@@ -71,7 +72,7 @@ def driver(request_file):
     for i in range(10):
         rows[i] = r[i]
 
-    output = open("output.txt", "a")
+    output = open(output_name, "a")
 
     # parse the request_file for easy access in dictionary
     requests = dict()
@@ -86,10 +87,14 @@ def driver(request_file):
         
         output.write(result + "\n")
 
-    print(theater)
-
     # close output file
     output.close()
 
+    # form the complete path of the output file and print/return it
+    complete_path = os.path.abspath(output_name)
+    print(complete_path)
+
+    return complete_path
+
 if __name__ == "__main__":
-    driver(sys.argv[1])
+    driver(sys.argv[1],sys.argv[2])
