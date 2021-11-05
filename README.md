@@ -5,6 +5,8 @@
  2. Customers prefer seats that are higher up and farther away from the screen.
  3. Customers will not want to be separated from their group and will always be in the same row as their group.
  4. Rows that are occupied will be separated from other occupied rows by one row at all times. Ex: If row 4 is occupied, rows 3 and 5 will be empty.
+ 5. The seats will be comprised of 10 rows of 20 seats.
+ 6. Requests will not be for more than the max amount of seats in a row(in this case 20).
 
 ### Algorithm:
  1. Parse through the request file and store in a dictionary / hashmap for access when processing requests.
