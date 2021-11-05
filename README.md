@@ -19,6 +19,7 @@
 
 ### Instructions:
  Execute in command line with the format: "python movie_theater_seating.py {input file path} {output file name}"
+ 
  Ex: python movie_theater_seating.py C:\\Users\\Brandon\\Desktop\\Walmart\ Coding\ Assignment\\input.txt output.txt
 
  Output file name can be the file name or the complete path.
